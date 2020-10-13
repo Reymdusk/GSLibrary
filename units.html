@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta Tags and Bootstrap-->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Bootstrap CSS Import-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <title>Grand Summoners Database</title>
+</head>
+
+<body>
+
+    <header class=jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Grand Summoners Database</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="collapse navbar-collapse" id="webNavi">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">News</a></li>
+                        <li class="nav-item active"><a class="nav-link">Units</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Equipment</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Dungeons</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tierlist</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-3">
+        <div class="row align-items-center">
+            <div class="col">
+
+                <!--Unit Attributes, Tabs-->
+                <h3>Unit Database</h3>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#unitFire" role="tab" data-toggle="tab">Fire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#unitWater" role="tab" data-toggle="tab">Water</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#unitEarth" role="tab" data-toggle="tab">Earth</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#unitLight" role="tab" data-toggle="tab">Light</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#unitDark" role="tab" data-toggle="tab">Dark</a>
+                    </li>
+                </ul>
+
+
+                <div class="tab-content">
+                    <!--Fire Units-->
+                    <div role="tabpanel" class="tab-pane fade show active" id="unitFire">
+                        <!--TODO: Add Fire Unit Imagess-->
+                    </div>
+
+                    <!--Water Units-->
+                    <div role="tabpanel" class="tab-pane fade show" id="unitWater">
+                        <!--TODO: Add Water Unit Imagess-->
+                    </div>
+
+                    <!--Earth Units-->
+                    <div role="tabpanel" class="tab-pane fade show" id="unitEarth">
+                        <!--TODO: Add Earth Unit Imagess-->
+                    </div>
+
+                    <!--Light Units-->
+                    <div role="tabpanel" class="tab-pane fade show" id="unitLight">
+                        <!--TODO: Add Light Unit Imagess-->
+                    </div>
+                    
+                    <!--Dark Units-->
+                    <div role="tabpanel" class="tab-pane fade show" id="unitDark">
+                        <!--TODO: Add Dark Unit Imagess-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <!--Scripts required for Bootstrap. Do not change-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
