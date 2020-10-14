@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--Bootstrap CSS Import-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
+    <!--Personal CSS Import-->
+    <link rel="stylesheet" href="styles.css" />
     <title>Grand Summoners Database</title>
 </head>
 
@@ -70,25 +71,172 @@
                     <!--Fire Units-->
                     <div role="tabpanel" class="tab-pane fade show active" id="unitFire">
                         <!--TODO: Add Fire Unit Imagess-->
+
+                        <!--Unit Clyde-->
+                        <img role="button" src="db/Units/Thumbnail/unit_thumbnail_ClydeAwk.png" data-toggle="modal" data-target="#modalClyde" />
+
+                        <div class="modal fade" id="modalClyde" role="dialog">
+                            <div class="modal-dialog modal-xl" role="document">
+                                <div class="modal-content">
+                                   <!-- <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button> X Button
+                                    </div> -->
+
+                                    <div class="modal-body">
+                                        <div class="accordion" id="accordClyde">
+                                            <div class="card">
+                                                <div class="card-header" id="headingInfoClyde">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#infoClyde" aria-expanded="true" aria-controls="infoClyde">
+                                                            Unit Information
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                            </div>
+
+                                            <!--Unit Info-->
+                                            <div id="infoClyde" class="collapse show" aria-labelledby="headingInfoClyde" data-parent="#accordClyde">
+                                                <div class="card mb-3">
+
+                                                    <div class="container">
+                                                        <div class="row no-gutters">
+                                                                <img src="db/Units/Detail/unit_detail_ClydeAwk.png" class="card-img-top unitDetail" />
+
+                                                            <div class="card-body">
+                                                                    <h5 class="card-title text-center">Awoken Clyde</h5>
+                                                                    <ul class="list-group list-group-flush">
+                                                                        <li class="list-group-item"> <!--Unit Stats-->
+                                                                            <div class="container">
+                                                                                <div class="row">
+                                                                                        <div class="col">
+                                                                                            <strong>STATS</strong>
+                                                                                            <p>HP - 6960 <span class="badge badge-dark">+999</span></p>
+                                                                                            <p>ATK - 2772 <span class="badge badge-dark">+425</span></p>
+                                                                                            <p>DEF - 2138 <span class="badge badge-dark">+330</span></p>
+                                                                                        </div>
+                                                                                        <div class="col">
+                                                                                            <strong>SLOTS</strong> <!--Unit LB Slots-->
+                                                                                            <p>5☆</p>
+                                                                                            <p>5☆</p>
+                                                                                            <p>3☆</p>
+                                                                                        </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                        <div class="col-sm-4">
+                                                                                            <strong>SKILL</strong>
+                                                                                            <p><span class="badge badge-secondary">BREAK 1500</span> 7s CT - 2000% Fire DMG (PHYS). </p>
+                                                                                        </div>
+                                                                                        <div class="col-sm-4">
+                                                                                            <strong>ARTS</strong>
+                                                                                            <p><span class="badge badge-secondary">BREAK 2200</span> 10000% Fire DMG (PHYS). Chance to inflict Burn.</p>
+                                                                                        </div>
+                                                                                        <div class="col-sm-4">
+                                                                                            <strong>TRUE ARTS</strong>
+                                                                                            <p><span class="badge badge-secondary">BREAK 4800</span> 22000% Fire DMG (PHYS). Chance to inflict Burn. Increase all Ally Arts Gauge by 20.</p>
+                                                                                        </div>
+                                                                                </div>    
+                                                                                
+                                                                                <div class="row">
+                                                                                    <div class="col">
+                                                                                            <!--Unit Passives-->
+                                                                                            <strong>ABILITIES</strong>
+                                                                                            <ul>
+                                                                                                <li>Increase all Fire Ally BE gain by 20%</li>
+                                                                                                <li>Increase all Fire Ally DMG by 30%</li>
+                                                                                            </ul> 
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card">
+                                                <div class="card-header" id="headingEvoClyde">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#evoClyde" aria-expanded="false" aria-controls="evoClyde">
+                                                            Evolution and Lore
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                            </div>
+
+                                            <!--Evolution and Lore-->
+                                            <div id="evoClyde" class="collapse" aria-labelledby="headingEvoClyde" data-parent="#accordClyde">
+                                                <div class="card mb-3">
+                                                    <li class="list-group-item"> <!--Evolution Materials-->
+                                                        <strong>MATERIALS</strong>
+                                                        <p><img src="db/Icons/dungeon_drops/fragDegilmagna.png"/> x 1</p>
+                                                    </li>
+                                                </div>
+                                            </div>
+
+                                            <div class="card">
+                                                <div class="card-header" id="headingTrueClyde">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#trueClyde" aria-expanded="false" aria-controls="trueClyde">
+                                                            True Equipment
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                            </div>
+
+                                            <!--True Equipment-->
+                                            <div id="trueClyde" class="collapse" aria-labelledby="headingTrueClyde" data-parent="#accordClyde">
+                                                <div class="card mb-3">
+                                                    <li class="list-group-item"> <!--True Weapon Name-->
+                                                        <img src="db/Equipment/Thumbnail/item_thumbnail_ClydeTW.png" class="trueThumb"/>
+                                                        <p class="text-center"><strong>True "Gradion"</strong></p>
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <strong>SKILL</strong>
+                                                                    <p><span class="badge badge-secondary">BREAK 1600</span> <br/>60s CT - 7000% Fire DMG (PHYS). For 8s, increase own Critical Rate by 100% against Burned Enemies.</p>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <strong>ABILITIES</strong>
+                                                                    <ul>
+                                                                        <li><span class="badge badge-info">Unique </span><br/>When equipped by Clyde, increase DMG by 75% and increase Arts by 3/s</li>
+                                                                        <li>Increase DMG to Earth Enemies by 25%</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </li>
+                                                </div>
+                                            </div>                        
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
                     </div>
+                </div>
+
 
                     <!--Water Units-->
-                    <div role="tabpanel" class="tab-pane fade show" id="unitWater">
+                    <div role="tabpanel" class="tab-pane fade" id="unitWater">
                         <!--TODO: Add Water Unit Imagess-->
+
+                        <!--Unit Corsair-->
+                        <img role="button" src="db/Units/Thumbnail/unit_thumbnail_CorsairAwk.png" data-toggle="modal" data-target="#modalCorsair"/>
                     </div>
 
                     <!--Earth Units-->
-                    <div role="tabpanel" class="tab-pane fade show" id="unitEarth">
+                    <div role="tabpanel" class="tab-pane fade" id="unitEarth">
                         <!--TODO: Add Earth Unit Imagess-->
                     </div>
 
                     <!--Light Units-->
-                    <div role="tabpanel" class="tab-pane fade show" id="unitLight">
+                    <div role="tabpanel" class="tab-pane fade" id="unitLight">
                         <!--TODO: Add Light Unit Imagess-->
                     </div>
                     
                     <!--Dark Units-->
-                    <div role="tabpanel" class="tab-pane fade show" id="unitDark">
+                    <div role="tabpanel" class="tab-pane fade" id="unitDark">
                         <!--TODO: Add Dark Unit Imagess-->
                     </div>
                 </div>
