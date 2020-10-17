@@ -25,6 +25,9 @@ body {
 }
 
 .evoDetail{
-    max-width: 60%;
-    height: auto;
+    min-width: 50px;
+    max-width: 250px;
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
 }
