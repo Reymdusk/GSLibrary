@@ -25,9 +25,12 @@
     </header>
 
     <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
         <div class="container">
             <div class="row align-items-center">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#webNavi" aria-controls="webNavi" aria-expanded="false" aria-label="Website Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
                 <div class="collapse navbar-collapse" id="webNavi">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">News</a></li>
@@ -153,6 +156,7 @@
                                                 </div>
                                             </div>
 
+                                            <!--Evolution and Lore-->
                                             <div class="card">
                                                 <div class="card-header" id="headingEvoClyde">
                                                     <h2 class="mb-0">
@@ -163,16 +167,41 @@
                                                 </div>
                                             </div>
 
-                                            <!--Evolution and Lore-->
+                                            
                                             <div id="evoClyde" class="collapse" aria-labelledby="headingEvoClyde" data-parent="#accordClyde">
                                                 <div class="card mb-3">
-                                                    <li class="list-group-item"> <!--Evolution Materials-->
-                                                        <strong>MATERIALS</strong>
-                                                        <p><img src="db/Icons/dungeon_drops/fragDegilmagna.png"/> x 1</p>
-                                                    </li>
+                                                            <ul class="nav nav-tabs" role="tablist">
+                                                               <li class="nav-item">
+                                                                    <a class="nav-link" href="#evoClyde2" role="tab" data-toggle="tab">
+                                                                        <img src="db/Units/Thumbnail/unit_thumbnail_Clyde2.png" class="evoThumb"/>
+                                                                        </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" href="#evoClyde3" role="tab" data-toggle="tab">
+                                                                        <img src="db/Units/Thumbnail/unit_thumbnail_Clyde3.png" class="evoThumb"/>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" href="#evoClyde4" role="tab" data-toggle="tab">
+                                                                        <img src="db/Units/Thumbnail/unit_thumbnail_Clyde4.png" class="evoThumb"/>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" href="#evoClyde5" role="tab" data-toggle="tab">
+                                                                        <img src="db/Units/Thumbnail/unit_thumbnail_Clyde5.png" class="evoThumb"/>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" href="#evoClydeAwk" role="tab" data-toggle="tab">
+                                                                        <img src="db/Units/Thumbnail/unit_thumbnail_ClydeAwk.png" class="evoThumb"/>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+
                                                 </div>
                                             </div>
 
+                                            <!--True Equipment-->
                                             <div class="card">
                                                 <div class="card-header" id="headingTrueClyde">
                                                     <h2 class="mb-0">
@@ -183,7 +212,7 @@
                                                 </div>
                                             </div>
 
-                                            <!--True Equipment-->
+                                            
                                             <div id="trueClyde" class="collapse" aria-labelledby="headingTrueClyde" data-parent="#accordClyde">
                                                 <div class="card mb-3">
                                                     <li class="list-group-item"> <!--True Weapon Name-->
@@ -214,7 +243,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                
 
 
                     <!--Water Units-->
@@ -240,7 +269,6 @@
                         <!--TODO: Add Dark Unit Imagess-->
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
