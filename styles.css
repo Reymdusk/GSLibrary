@@ -31,3 +31,8 @@ body {
     margin-left: 20px;
     margin-top: 10px;
 }
+
+.lbThumb{
+    max-width: 30px;
+    height: auto;
+}
