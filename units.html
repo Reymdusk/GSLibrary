@@ -14,7 +14,7 @@
 
 <body>
 
-    <header class="jumbotron">
+    <header>
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -76,7 +76,7 @@
                         <!--TODO: Add Fire Unit Imagess-->
 
                         <!--Unit Clyde-->
-                        <img role="button" src="db/Units/Thumbnail/unit_thumbnail_ClydeAwk.png" data-toggle="modal" data-target="#modalClyde" />
+                        <img role="button" src="db/Units/Thumbnail/unit_thumbnail_ClydeAwk.png" data-toggle="modal" data-target="#modalClyde" title="Clyde" class="unitTooltip"/>
 
                         <div class="modal fade" id="modalClyde" role="dialog">
                             <div class="modal-dialog modal-xl" role="document">
@@ -385,7 +385,7 @@
                         <!--TODO: Add Water Unit Imagess-->
 
                         <!--Unit Corsair-->
-                        <img role="button" src="db/Units/Thumbnail/unit_thumbnail_CorsairAwk.png" data-toggle="modal" data-target="#modalCorsair"/>
+                        <img role="button" src="db/Units/Thumbnail/unit_thumbnail_CorsairAwk.png" data-toggle="modal" data-target="#modalCorsair" title="Corsair" class="unitTooltip"/>
                         <div class="modal fade" id="modalCorsair" role="dialog">
                             <div class="modal-dialog modal-xl" role="document">
                                 <div class="modal-content">
@@ -692,7 +692,7 @@
                         <!--TODO: Add Earth Unit Imagess-->
 
                         <!--Unit Arth-->
-                        <img role="button" src="db/Units/Thumbnail/unit_thumbnail_ArthAwk.png" data-toggle="modal" data-target="#modalArth"/>
+                        <img role="button" src="db/Units/Thumbnail/unit_thumbnail_ArthAwk.png" data-toggle="modal" data-target="#modalArth" title="Arth" class="unitTooltip"/>
                         <div class="modal fade" id="modalArth" role="dialog">
                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
                                 <div class="modal-content">
@@ -1305,6 +1305,310 @@
                     <!--Dark Units-->
                     <div role="tabpanel" class="tab-pane fade" id="unitDark">
                         <!--TODO: Add Dark Unit Imagess-->
+
+                        <!--Unit Regulus-->
+                        <img role="button" src="db/Units/Thumbnail/unit_thumbnail_RegulusAwk.png" data-toggle="modal" data-target="#modalRegulus" title="Regulus" class="unitTooltip"/>
+                        <div class="modal fade" id="modalRegulus" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
+                                <div class="modal-content">
+                                   <div class="modal-header">
+                                        <h5 class="modal-title">Regulus</h5>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button> <!--X Button-->
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div class="accordion" id="accordRegulus">
+                                            <div class="card">
+                                                <div class="card-header" id="headingInfoRegulus">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#infoRegulus" aria-expanded="true" aria-controls="infoRegulus">
+                                                            Unit Information
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                            </div>
+
+                                            <!--Unit Info-->
+                                            <div id="infoRegulus" class="collapse show" aria-labelledby="headingInfoRegulus" data-parent="#accordRegulus">
+                                                <div class="card mb-3">
+
+                                                    <div class="container">
+                                                        <div class="row no-gutters">
+                                                                <img src="db/Units/Detail/unit_detail_RegulusAwk.png" class="card-img-top unitDetail" />
+
+                                                            <div class="card-body">
+                                                                    <h5 class="card-title text-center">Awoken Regulus</h5>
+                                                                    <ul class="list-group list-group-flush">
+                                                                        <li class="list-group-item"> <!--Unit Stats-->
+                                                                            <div class="container">
+                                                                                <div class="row">
+                                                                                        <div class="col">
+                                                                                            <strong>STATS</strong>
+                                                                                            <p>HP - 6970 <span class="badge badge-dark">+999</span></p>
+                                                                                            <p>ATK - 2693 <span class="badge badge-dark">+413</span></p>
+                                                                                            <p>DEF - 2423 <span class="badge badge-dark">+373</span></p>
+                                                                                            <p><em>Dark, Demon</em></p>
+                                                                                        </div>
+                                                                                        <div class="col">
+                                                                                            <strong>SLOTS</strong> <!--Unit LB Slots-->
+                                                                                            <p>5☆ <img src="db/Mines/thumbnail/physLB.png" class="lbThumb"/></p>
+                                                                                            <p>5☆ <img src="db/Mines/thumbnail/magLB.png" class="lbThumb"/></p>
+                                                                                            <p>3☆ <img src="db/Mines/thumbnail/healLB.png" class="lbThumb"/></p>
+                                                                                        </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                        <div class="col-sm-4">
+                                                                                            <strong>SKILL</strong>
+                                                                                            <p><span class="badge badge-secondary">BREAK 1250</span> 9s CT - 2200% Dark DMG (PHYS).</p>
+                                                                                        </div>
+                                                                                        <div class="col-sm-4">
+                                                                                            <strong>ARTS</strong>
+                                                                                            <p><span class="badge badge-secondary">BREAK 2000</span> 10850% Dark DMG (PHYS). For 5s, increase all Ally Critical Rate by 50%. </p>
+                                                                                        </div>
+                                                                                        <div class="col-sm-4">
+                                                                                            <strong>TRUE ARTS</strong>
+                                                                                            <p><span class="badge badge-secondary">BREAK 3800</span> 25550% Dark DMG (PHYS). For 8s, increase all Ally Critical to 100%, and increase DMG to Light Enemy by 50%. </p>
+                                                                                        </div>
+                                                                                </div>    
+                                                                                
+                                                                                <div class="row">
+                                                                                    <div class="col">
+                                                                                            <!--Unit Passives-->
+                                                                                            <strong>ABILITIES</strong>
+                                                                                            <ul>
+                                                                                                <li><span class="badge badge-info">Unique</span>Increase all Ally Dark DMG by 30%.</li>
+                                                                                                <li>Increase own Light RES by 30%.</li>
+                                                                                            </ul> 
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--Evolution and Lore-->
+                                            <div class="card">
+                                                <div class="card-header" id="headingEvoRegulus">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#evoRegulus" aria-expanded="false" aria-controls="evoRegulus">
+                                                            Evolution and Lore
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div id="evoRegulus" class="collapse" aria-labelledby="headingEvoRegulus" data-parent="#accordRegulus">
+                                                <div class="card mb-3">
+                                                    <!--Unit Evo Tabs-->
+                                                    <ul class="nav nav-tabs" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#evoRegulus2" role="tab" data-toggle="tab">
+                                                                <img src="db/Units/Thumbnail/unit_thumbnail_Regulus2.png" class="evoThumb"/>
+                                                                </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#evoRegulus3" role="tab" data-toggle="tab">
+                                                                <img src="db/Units/Thumbnail/unit_thumbnail_Regulus3.png" class="evoThumb"/>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#evoRegulus4" role="tab" data-toggle="tab">
+                                                                <img src="db/Units/Thumbnail/unit_thumbnail_Regulus4.png" class="evoThumb"/>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#evoRegulus5" role="tab" data-toggle="tab">
+                                                                <img src="db/Units/Thumbnail/unit_thumbnail_Regulus5.png" class="evoThumb"/>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#evoRegulusAwk" role="tab" data-toggle="tab">
+                                                                <img src="db/Units/Thumbnail/unit_thumbnail_RegulusAwk.png" class="evoThumb"/>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!--Unit Evo Materials and Lore-->
+                                                    <div class="tab-content">
+                                                        <div role="tabpanel" class="tab-pane fade show active" id="evoRegulus2">
+                                                            <div class="card">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-xs-4">
+                                                                        <img src="db/Units/Detail/unit_detail_Regulus2.png" class="evoDetail" />
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <div class="card-body">
+                                                                            <h3>Evolution Materials</h3> <br/>
+                                                                            <h5>Base Form</h3>
+                                                                            <br/>
+                                                                            <h3 class="card-title">Lore</h3>
+                                                                            <p class="card-text">
+                                                                                A knight of the Raven's Aegis, a troop of La Riiz dedicated to protecting sorcerers. 
+                                                                                While the troop emphasized defense, Regulus opted not to carry a shield, focusing on 
+                                                                                offense instead. Nonetheless, he remained in the troop, both because his sword skills 
+                                                                                saved more sorcerers than any shield, and because he lacked the capacity for magic himself. 
+                                                                                He would later achieve renown as one of the Twin Knights of the Morning Star. 
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade show" id="evoRegulus3">
+                                                            <div class="card">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-xs-4">
+                                                                        <img src="db/Units/Detail/unit_detail_Regulus3.png" class="evoDetail" />
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <div class="card-body">
+                                                                            <h3>Evolution Materials</h3> <br/>
+                                                                            <img src="db/Icons/dungeon_drops/material_thumbnail_dark2.png" class="evoThumb"/> x2,
+                                                                            <img src="db/Icons/dungeon_drops/material_thumbnail_dark1.png" class="evoThumb"/> x2
+                                                                            <br/>
+                                                                            <h3 class="card-title">Lore</h3>
+                                                                            <p class="card-text">
+                                                                                A member of the Twin Knights of the Morning Star, duo famous after the Ancient War. 
+                                                                                Just before the start of the Ancient War, when tensions between Gods and Demons were at their peak, 
+                                                                                Regulus spent time away from his fellow knights. Records of his battles with knights across the land 
+                                                                                suggest this was a training pilgrimage, but it's also rumored that he received a secret mission 
+                                                                                from La Riiz' High Council to visit Human-controlled lands. 
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade show" id="evoRegulus4">
+                                                            <div class="card">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-xs-4">
+                                                                        <img src="db/Units/Detail/unit_detail_Regulus4.png" class="evoDetail" />
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <div class="card-body">
+                                                                            <h3>Evolution Materials</h3> <br/>
+                                                                            <img src="db/Icons/dungeon_drops/material_thumbnail_dark3.png" class="evoThumb"/> x2,
+                                                                            <img src="db/Icons/dungeon_drops/material_thumbnail_dark2.png" class="evoThumb"/> x5
+                                                                            <br/>
+                                                                            <h3 class="card-title">Lore</h3>
+                                                                            <p class="card-text">
+                                                                                A member of the Twin Knights of the Morning Star, duo famous after the Ancient War. 
+                                                                                Regulus, challenged not just Humans during his travels, but countless other races as well. 
+                                                                                One of his famous achievement was the battle against the Flamewyrm Dargeon, which lasted three days 
+                                                                                and three nights before the final draw, that made his name renowned even among Dragons. 
+                                                                                This only incremented his opponents, who, regardless of race, challenged him, increasing his skills to the apex. 
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade show" id="evoRegulus5">
+                                                            <div class="card">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-xs-4">
+                                                                        <img src="db/Units/Detail/unit_detail_Regulus5.png" class="evoDetail" />
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <div class="card-body">
+                                                                            <h3>Evolution Materials</h3> <br/>
+                                                                            <img src="db/Icons/dungeon_drops/material_thumbnail_dark4.png" class="evoThumb"/> x2,
+                                                                            <img src="db/Icons/dungeon_drops/material_thumbnail_dark3.png" class="evoThumb"/> x5
+                                                                            <br/>
+                                                                            <h3 class="card-title">Lore</h3>
+                                                                            <p class="card-text">
+                                                                                When the Ancient War broke out, Regulus returned to La Riiz to rejoin his troop. 
+                                                                                A veteran of battles against all the races, Regulus inspired bravery in his companions and 
+                                                                                countrymen. After Gods and Demons vanished from the world at the end of the war, he traveled 
+                                                                                with a lady knight to help those in need: a duo that came to be known as the Twin Knights 
+                                                                                of the Morning Star. Strangely, no record of his deeds after this point remains... 
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane fade show" id="evoRegulusAwk">
+                                                            <div class="card">
+                                                                <div class="row no-gutters">
+                                                                    <div class="col-xs-4">
+                                                                        <img src="db/Units/Detail/unit_detail_RegulusAwk.png" class="evoDetail" />
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <div class="card-body">
+                                                                            <h3>Evolution Materials</h3> <br/>
+                                                                            <img src="db/Icons/dungeon_drops/material_thumbnail_heroSoul.png" class="evoThumb"/> x10,
+                                                                            <img src="db/Icons/dungeon_drops/material_thumbnail_paradisos.png" class="evoThumb"/> x1,
+                                                                            <img src="db/Icons/dungeon_drops/fragValzandeth.png" class="evoThumb" alt="Valzandeth Fragment" data-toggle="tooltip" title="Valzandeth Fragment"/> x4,
+                                                                            <img src="db/Icons/dungeon_drops/fragIfrit.png" class="evoThumb" alt="Ifrit Fragment" data-toggle="tooltip" title="Ifrit Fragment"/> x4,
+                                                                            <img src="db/Icons/dungeon_drops/fragOldeus.png" class="evoThumb" alt="Oldeus Fragment" data-toggle="tooltip" title="Oldeus Fragment"/> x5
+
+                                                                            <br/>
+                                                                            <h3 class="card-title">Lore</h3>
+                                                                            <p class="card-text">
+                                                                                After the end of the Ancient War, he was knownn as one of the Twin Knights of the Morning Star, 
+                                                                                but before that, he was already famous for saving the Magus Empire of La Riiz from great peril. 
+                                                                                He stood against the God Eater Mavroskia, which brings calamity wherever it appears, and turned its 
+                                                                                rampage. This is the only time in history a God Eater's destruction has been limited so far. 
+                                                                                They say he had the protection of a certain Witch, but his merit in the story is undeniable. 
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--True Equipment-->
+                                            <div class="card">
+                                                <div class="card-header" id="headingTrueRegulus">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#trueRegulus" aria-expanded="false" aria-controls="trueRegulus">
+                                                            True Equipment
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div id="trueRegulus" class="collapse" aria-labelledby="headingTrueRegulus" data-parent="#accordRegulus">
+                                                <div class="card mb-3">
+                                                    <li class="list-group-item"> <!--True Weapon Name-->
+                                                        <img src="db/Equipment/Thumbnail/item_thumbnail_RegulusTW.png" class="trueThumb"/>
+                                                        <p class="text-center"><strong>True "Nemesis Crow"</strong></p>
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <strong>SKILL</strong>
+                                                                    <p><span class="badge badge-secondary">BREAK 1000</span> <br/>50s CT - 7000% Dark DMG (MAG). For 10s, reduce all Enemy Dark RES by 50%. </p>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <strong>ABILITIES</strong>
+                                                                    <ul>
+                                                                        <li><span class="badge badge-info">Unique </span><br/>When equipped by Regulus, increase own Critical DMG by 50%, and increase Arts Gauge by 3/s.</li>
+                                                                        <li>Increase DMG to Dragon Enemies by 50%.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </li>
+                                                </div>
+                                            </div>                        
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

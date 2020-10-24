@@ -1,7 +1,7 @@
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-
-    $('.unitTooltip').mouseover(function(){
-      $('.unitTooltip').tooltip('show');
+    $('[data-toggle="tooltip"]').tooltip({
+      container: 'body'
     });
+
+    $('.unitTooltip').tooltip();
   })
